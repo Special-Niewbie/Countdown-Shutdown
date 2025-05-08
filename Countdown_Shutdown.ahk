@@ -448,7 +448,7 @@ CheckForUpdates(*) {
                         setupFileUrl := fileUrlMatch[1]
                     }
                     ; Pattern 4: Cerca specificamente CountdownShutdown
-                    else if (RegExMatch(jsonContent, 'U)"browser_download_url":\s*"([^"]*Countdown&Shutdown[^"]*\.exe)"', &fileUrlMatch)) {
+                    else if (RegExMatch(jsonContent, 'U)"browser_download_url":\s*"([^"]*Countdown_Shutdown[^"]*\.exe)"', &fileUrlMatch)) {
                         ; FileAppend("`nPattern 4 found: " fileUrlMatch[1], A_ScriptDir "\debug_log.txt")
                         foundUrl := true
                         setupFileUrl := fileUrlMatch[1]
